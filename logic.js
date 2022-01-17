@@ -11,7 +11,7 @@ let pw = document.getElementById("public['wright']");
 let pe = document.getElementById("public['execute']");
 
 let output = document.getElementById("output")
-let total = "000";
+let total = 000;
 let totalWithZeros = "";
 
 
