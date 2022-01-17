@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chmod</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="flexColumn xFlexCenter yFlexCenter" style="width:100vw; height:100vh;">
+        <div class=" flexColumn xFlexCenter yFlexCenter shadow padding">
+            <div class="padding" style="padding-top:0px;padding-bottom:30px;">
+                <h1>chmod</h1>
+            </div>
+            <div class="flexRow xFlexCenter yFlexCenter">
+
+
+                <div class="shadow margin padding flexColumn xFlexCenter">
+                    <h2 style="padding-bottom: 30px;">Owner</h2>
+                    <div class="flexColumn xFlexRight" style="padding-top:0px;">
+                        <div class="">
+                            <lable for="owner['read']">Reed</lable>
+                            <input id="or" type="checkbox" value="400" onClick="runCheck('or')">
+                        </div>
+                        <div class="">
+                            <lable for="owner['wright']">Wright</lable>
+                            <input id="ow" type="checkbox" value="200" onClick="runCheck('ow')">
+                        </div>
+                        <div class="">
+                            <lable for="owner['execute']">Execute</lable>
+                            <input id="oe" type="checkbox" value="100" onClick="runCheck('oe')">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shadow margin padding flexColumn xFlexCenter">
+                    <h2 style="padding-bottom: 30px;">Group</h2>
+                    <div class="flexColumn xFlexRight" style="padding-top:0px;">
+                        <div class="">
+                            <lable for="group['read']">Reed</lable>
+                            <input id="gr" type="checkbox" value="40" onClick="runCheck('gr')">
+                        </div>
+                        <div class="">
+                            <lable for="group['wright']">Wright</lable>
+                            <input id="gw" type="checkbox" value="20" onClick="runCheck('gw')">
+                        </div>
+                        <div class="">
+                            <lable for="group['execute']">Execute</lable>
+                            <input id="ge" type="checkbox" value="10" onClick="runCheck('ge')">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="shadow margin padding flexColumn xFlexCenter">
+                    <h2 style="padding-bottom: 30px;">Public</h2>
+                    <div class="flexColumn xFlexRight" style="padding-top:0px;">
+                        <div class="">
+                            <lable for="public['read']">Reed</lable>
+                            <input id="pr" type="checkbox" value="4" onClick="runCheck('pr')">
+                        </div>
+                        <div class="">
+                            <lable for="public['wright']">Wright</lable>
+                            <input id="pw" type="checkbox" value="2" onClick="runCheck('pw')">
+                        </div>
+                        <div class="">
+                            <lable for="public['execute']">Execute</lable>
+                            <input id="pe" type="checkbox" value="1" onClick="runCheck('pe')">
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="flexColumn xFlexCenter">
+                <h2 class="padding">Permissions</h2>
+                <input style="width:200px;" id="output" type="text" value="000">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="logic.js"></script>
+
+</html>
