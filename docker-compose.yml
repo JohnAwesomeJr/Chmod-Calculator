@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  chmodCalculator:
+    container_name: chmodCalculator
+    image: mylamp:latest
+    volumes:
+      - "./html:/var/www/html/"
+    ports:
+      - 80:80
+      - 433:433
